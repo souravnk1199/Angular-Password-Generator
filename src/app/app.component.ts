@@ -28,8 +28,16 @@ export class AppComponent {
     return this.password;
   }
 
-  onChangeLength(target: EventTarget) {
-    const value = (<HTMLInputElement>target).value;
+  // onChangeLength(target: EventTarget) {
+  //   const value = (<HTMLInputElement>target).value;
+  //   const parsedValue = parseInt(value);
+  //   if (!isNaN(parsedValue)) {
+  //     this.length = parsedValue;
+  //   }
+  // }
+
+  onChangeLength(value: string) {
+    // const value = (<HTMLInputElement>target).value;
     const parsedValue = parseInt(value);
     if (!isNaN(parsedValue)) {
       this.length = parsedValue;
